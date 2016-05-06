@@ -71,7 +71,7 @@
     "start": "rm -rf build/* && node server.js",
     "build": "rm -rf build/* && ./node_modules/webpack/bin/webpack.js",
     "dist": "rm -rf dist/* && ./node_modules/webpack/bin/webpack.js -p --config webpack.production.config.js",
-    "prod": "npm i && npm run dist && node prod.js",
+    "prod": "npm i && node prod.js",
     "lint": "./node_modules/.bin/eslint src/",
     "test": "./node_modules/.bin/karma start ./test/karma.conf.js --reporters mocha,coverage",
     "test:watch": "./node_modules/.bin/karma start ./test/karma.conf.js --no-single-run --reporters mocha"
