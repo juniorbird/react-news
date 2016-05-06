@@ -103,7 +103,7 @@ const App = React.createClass({
                 <header className="header cf">
                     <div className="float-left">
                         <Link to="/" className="menu-title">
-                            <span>react-news</span>
+                            <span>Codesmith News</span>
                         </Link>
                     </div>
                     <div className="float-right">
