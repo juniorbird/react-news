@@ -69,7 +69,7 @@
   },
   "scripts": {
     "start": "rm -rf build/* && node server.js",
-    "build": "rm -rf build/* && ./node_modules/.bin/webpack",
+    "build": "rm -rf build/* && ./node_modules/webpack/bin/webpack.js",
     "dist": "rm -rf dist/* && ./node_modules/webpack/bin/webpack.js -p --config webpack.production.config.js",
     "prod": "npm i && npm run dist && node prod.js",
     "lint": "./node_modules/.bin/eslint src/",
