@@ -9,4 +9,4 @@ http.createServer((request, response) => {
   } else {
     fs.readFile('./dist/index.html', (error, data) => response.end(error || data));
   }
-}).listen(8081);
+}).listen(process.env.PORT || 3000);
