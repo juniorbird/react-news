@@ -13,4 +13,4 @@ export const errorMessages = {
     generic: 'Something went wrong.'
 };
 
-export const firebaseUrl = 'https://scorching-fire-5787.firebaseio.com/';
+export const firebaseUrl = 'https://codesmith-news.firebaseio.com/';
