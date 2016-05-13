@@ -6,6 +6,8 @@ http.createServer((request, response) => {
   response.writeHead(200, { 'Content-Type': 'text/html' });
   if (request.url.substring(1) === 'app.min.js') {
     fs.readFile('./dist/app.min.js', (error, data) => response.end(error || data));
+  } else if (request.url.substring(1) === 'favicon.ico') {
+    fs.readFile('favicon.ico', (error, data) => response.end(error || data));
   } else {
     fs.readFile('./dist/index.html', (error, data) => response.end(error || data));
   }
