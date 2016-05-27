@@ -9,7 +9,7 @@ let baseRef = new Firebase(firebaseUrl);
 let postsRef = baseRef.child('posts');
 // let scrollRef = new Firebase.util.Scroll(baseRef, 'number');
 
-let postsPerPage = 10;
+let postsPerPage = 30;
 
 const sortValues = {
     // values mapped to firebase locations at baseRef/posts
@@ -23,7 +23,7 @@ let data = {
     currentPage: 1,
     nextPage: true,
     sortOptions: {
-        currentValue: 'upvotes',
+        currentValue: 'time',
         values: sortValues
     }
 };
