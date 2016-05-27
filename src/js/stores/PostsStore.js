@@ -23,7 +23,7 @@ let data = {
     currentPage: 1,
     nextPage: true,
     sortOptions: {
-        currentValue: 'time',
+        currentValue: 'newest',
         values: sortValues
     }
 };
